@@ -1,0 +1,163 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div.container{
+    width: 1000px;
+    /* margin-left: auto;
+    margin-right: auto; 
+    a mesma coisa*/
+    margin: 0 auto;
+}
+
+h1{
+    font-family: 'Rock Salt', Courier New, Courier, monospace;
+    font-size: 30px;
+}
+
+header, footer{
+    height: 70px;
+    background-color: rgb(50,50,50);
+    color: rgb(250,250,250);
+    overflow: hidden;
+    /*overflow: scroll;
+    caixa de rolagem se o conteudo passar do tamando da div*/
+}
+
+header > img:first-child {
+    float: left;
+    border: 1px solid red;
+    margin: 10px;
+}
+
+header h1{
+    float: left;
+    margin-top: 20px;
+}
+
+header div{
+    /* position: absolute;
+    right: 0; 
+    Mesmo efeito que float*/
+    float: right;
+    width: 200px;
+}
+
+header div img{
+    float: left;
+    margin: 10px;
+}
+
+header div p{
+    text-align: center;
+    margin-top:15px;
+}
+
+header div a{
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    color: cyan;
+}
+
+section.noticias{
+    float: left;
+    width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    /* box-sizing para o padding não aumentar o tamanho da section, */
+}
+
+.noticias h2{
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.noticias p{
+    text-align: justify;
+    /* espaço de paragrafo */
+    text-indent: 1em;
+    margin-bottom: 0.55em
+}
+
+article span{
+    float: right;
+    font-size: 0.75em;
+}
+
+article{
+    padding: 0.5em 0;
+}
+
+article:not(:last-child) {
+    border-bottom: 1.4px dashed rgb(50,50,50);
+}
+
+aside {
+    background-color: rgb(166, 213, 216);
+    float: right;
+    width: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+    /* TODO: falta um hack para 100% de altura
+    height:100% */
+}
+
+aside img{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 1em;
+}
+
+aside a{
+    display: block;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+aside select{
+    height: 2em;
+    width: 100%;
+}
+/* hack para considerar o height dos elementos flutuantes */
+.clear{
+    clear: both;
+}
+
+footer {
+    clear: both;
+}
+
+footer div.left img{
+    margin: 10px;
+    float: left;
+}
+
+footer div.right img{
+    margin: 10px;
+    float: right;
+}
+
+footer div.left span{
+    font-size: 0.8em;
+    display: block;
+    margin-top: 15px;
+}
+
+footer div.right span{
+    font-size: 0.8em;
+    margin-top: 18px;
+    text-align: right;
+    float: left;
+    width: 440px;
+}
+
+footer div.left{
+    float: left;
+    width: 200px;
+}
+footer div.right{
+    float: right;
+    width: 500px;
+}
